@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Message Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Sigma Drip - Order Message Generator</h2>
+    <form id="orderForm">
+      <input type="text" id="customerName" placeholder="Customer Name" required />
+      <input type="text" id="orderId" placeholder="Order ID" required />
+      <input type="text" id="itemsName" placeholder="Item Names (comma-separated)" required />
+      <input type="number" id="totalItems" placeholder="Total Items" required />
+      
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <select id="paymentMethod" required>
+        <option value="">Select Payment Method</option>
+        <option value="Cash on delivery">Cash on delivery</option>
+        <option value="Prepaid">Prepaid</option>
+      </select>
+      <button type="submit">Generate Message</button>
+    </form>
+    <div id="output" class="message"></div>
+    <button id="copyBtn">Copy Message</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
