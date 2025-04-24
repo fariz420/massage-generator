@@ -3,7 +3,7 @@ document.getElementById('orderForm').addEventListener('submit', function(event) 
   
     const name = document.getElementById('customerName').value;
     const orderId = document.getElementById('orderId').value;
-    const orderName = document.getElementById('itemsName').value;
+    const itemsName = document.getElementById('itemsName').value;
     const totalItems = document.getElementById('totalItems').value;
     const amount = document.getElementById('amount').value;
     const paymentMethod = document.getElementById('paymentMethod').value;
